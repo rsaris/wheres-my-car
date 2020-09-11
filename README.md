@@ -1,24 +1,8 @@
-# README
+# Where's my car
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I have to park on the street & have a terrible memory. The goal here is to be able to tell my smart speaker "The car is parked at X" and then I can ask it "Where's the car?" and it'll tell me.
 
-Things you may want to cover:
+# Tools to play with
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Devise and Omniauth for account creation / management
+* Google Actions for interacting with Google Assistant
