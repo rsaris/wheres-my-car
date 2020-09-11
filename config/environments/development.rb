@@ -1,4 +1,13 @@
 Rails.application.configure do
+  # Load variables into ENV from .env file
+  env_file = File.join(Rails.root, '.env')
+  if File.exists?(env_file)
+    File.readlines( env_file ).each do |line|
+      line_match = line.match( /(?<key>[^=]*)=(?<value>.*)/ )
+      ENV[line_match['key']] = line_match['value'].strip unless line_match.nil? || line.starts_with?( '#' )
+    end
+  end
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
