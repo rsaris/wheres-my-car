@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+
+.page {
+  margin: auto;
+  max-width: 75rem;
+
+  &--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+  }
+}
