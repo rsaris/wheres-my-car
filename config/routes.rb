@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'static_pages#root'
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth' }
+
+  resources :google_actions, path: 'google-actions', only: [:create]
 end
