@@ -1,7 +1,7 @@
 {
   "name": "wheres-my-car",
   "scripts": {
-    "postdeploy": "bundle exec rake db:migrate db:seed"
+    "postdeploy": "rails db:migrate db:seed"
   },
   "env": {
   },
