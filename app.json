@@ -1,0 +1,26 @@
+{
+  "name": "wheres-my-car",
+  "scripts": {
+    "postdeploy": "rails db:migrate db:seed"
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    "heroku-postgresql",
+    "papertrail"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
